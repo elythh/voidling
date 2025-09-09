@@ -8,6 +8,7 @@
   ];
 
   nixpkgs = {
+    config.allowUnfreeSoftware = true;
     config.permittedInsecurePackages = [
       "qtwebengine-5.15.19"
     ];
@@ -40,8 +41,6 @@
      fzf
      direnv
      slacky
-     spotify-qt
-     widevine-cdm
 
 
      inputs.neovim.packages."aarch64-linux".neovim
