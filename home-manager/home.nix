@@ -39,7 +39,7 @@
      bitwarden
      fzf
      direnv
-     slack
+     slacky
 
      inputs.neovim.packages."aarch64-linux".neovim
   ];
