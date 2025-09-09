@@ -40,6 +40,8 @@
      fzf
      direnv
      slacky
+     chromium
+     spotify
 
      inputs.neovim.packages."aarch64-linux".neovim
   ];
