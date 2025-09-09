@@ -1,5 +1,41 @@
 {
   "nodes": {
+    "asahi-widevine": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723388729,
+        "narHash": "sha256-ox2xU7PraSexer7+M+4Bc5gxpRYr1d4elh1e6erpsUg=",
+        "owner": "AsahiLinux",
+        "repo": "widevine-installer",
+        "rev": "eab8c668ad3f9db27a444ee1f94b82d8f3ab5336",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AsahiLinux",
+        "repo": "widevine-installer",
+        "type": "github"
+      }
+    },
+    "chromium-widevine": {
+      "inputs": {
+        "asahi-widevine": "asahi-widevine",
+        "lacros": "lacros",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1757421688,
+        "narHash": "sha256-Q2UzAP2R7FOe0NU9MOAy0b3+Y4wUf8ZAiSiI9mELbYM=",
+        "owner": "elythh",
+        "repo": "chromium-widevine-nixos",
+        "rev": "b972fb9b3f9041e3df096c48016725d4f625e3f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "elythh",
+        "repo": "chromium-widevine-nixos",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "locked": {
         "lastModified": 1746162366,
@@ -56,9 +92,21 @@
         "type": "github"
       }
     },
+    "lacros": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-+BvpWlYv4E0XSmnL0gGISUp0WflexbKtYnNE293nik0=",
+        "type": "file",
+        "url": "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/chromeos-lacros-arm64-squash-zstd-120.0.6098.0"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/chromeos-lacros-arm64-squash-zstd-120.0.6098.0"
+      }
+    },
     "neovim": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1756816058,
@@ -77,7 +125,7 @@
     "nixos-apple-silicon": {
       "inputs": {
         "flake-compat": "flake-compat",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs_3",
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
@@ -96,6 +144,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1757347588,
+        "narHash": "sha256-tLdkkC6XnsY9EOZW9TlpesTclELy8W7lL2ClL+nma8o=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b599843bad24621dcaa5ab60dac98f9b0eb1cabe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1756542300,
         "narHash": "sha256-tlOn88coG5fzdyqz6R93SQL5Gpq+m/DsWpekNFhqPQk=",
         "owner": "NixOS",
@@ -110,7 +174,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1755615617,
         "narHash": "sha256-HMwfAJBdrr8wXAkbGhtcby1zGFvs+StOp19xNsbqdOg=",
@@ -126,7 +190,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1757378448,
         "narHash": "sha256-xjxBvI52MBzn/Htx5iF85xmQxJjneRdX98n8U0m1wLw=",
@@ -143,10 +207,11 @@
     },
     "root": {
       "inputs": {
+        "chromium-widevine": "chromium-widevine",
         "home-manager": "home-manager",
         "neovim": "neovim",
         "nixos-apple-silicon": "nixos-apple-silicon",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "zen-browser": "zen-browser"
       }
     },

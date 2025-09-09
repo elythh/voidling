@@ -14,6 +14,8 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
 
     neovim.url = "github:elythh/nvim";
+
+    chromium-widevine.url = "github:elythh/chromium-widevine-nixos";
   };
 
   outputs = {
