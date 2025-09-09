@@ -37,6 +37,7 @@
      nh
      lazygit
      bitwarden
+     fzf
 
      inputs.neovim.packages."aarch64-linux".neovim
   ];
