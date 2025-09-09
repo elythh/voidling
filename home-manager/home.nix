@@ -67,7 +67,7 @@
       Name=Spotify
       GenericName=music
       Comment=Listen to Spotify
-      Exec=${inputs.chromium-widevinem.packages.aarch64-linux.chromium-widevine}/bin/chromium --app=https://open.spotify.com
+      Exec=${inputs.chromium-widevine.packages.aarch64-linux.chromium-widevine}/bin/chromium --app=https://open.spotify.com
       Terminal=false
       Type=Application
       Keywords=music;
