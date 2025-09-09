@@ -38,6 +38,8 @@
      lazygit
      bitwarden
      fzf
+     direnv
+     slack
 
      inputs.neovim.packages."aarch64-linux".neovim
   ];
