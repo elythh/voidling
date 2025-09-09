@@ -30,6 +30,7 @@
   };
 
   home.packages = with pkgs; [
+     btop
      networkmanager
      nerd-fonts.fira-code
      stremio

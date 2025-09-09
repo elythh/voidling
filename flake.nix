@@ -16,6 +16,17 @@
     neovim.url = "github:elythh/nvim";
 
     chromium-widevine.url = "github:elythh/chromium-widevine-nixos";
+
+
+    quickshell.url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+    quickshell.inputs.nixpkgs.follows = "nixpkgs";
+
+    caelestia-cli.url = "github:caelestia-dots/cli";
+
+    caelestia.url = "github:caelestia-dots/shell";
+    caelestia.inputs.quickshell.follows = "quickshell";
+
+    vicinae.url = "github:vicinaehq/vicinae";
   };
 
   outputs = {
@@ -47,6 +58,7 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./nixos/configuration.nix
+          ./modules/nixos
         ];
       };
     };

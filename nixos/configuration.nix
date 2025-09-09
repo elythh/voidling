@@ -15,9 +15,9 @@
 
   hardware.asahi.peripheralFirmwareDirectory = ./firmware;
 
-  services.xserver.enable = true;
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  # services.xserver.enable = true;
+  # services.displayManager.gdm.enable = true;
+  # services.desktopManager.gnome.enable = true;
   services.tailscale.enable = true;
 
   nixpkgs = {
@@ -58,6 +58,7 @@
     };
   };
   programs.fish.enable = true;
+  # programs.steam.enable = true;
   time.timeZone = "Europe/Paris";
 
   system.stateVersion = "23.05";
